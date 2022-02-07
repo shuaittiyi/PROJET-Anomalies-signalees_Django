@@ -1,3 +1,7 @@
-body {
-    background-color: red;
-}
+li a {
+     color: green;
+ }
+ body {
+     background: white url("img/accueil.jpg") no-repeat right bottom;
+     background-size:100% 200%; 
+ }

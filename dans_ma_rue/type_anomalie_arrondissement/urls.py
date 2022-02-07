@@ -1,6 +1,7 @@
+from unicodedata import name
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index_anomalie_mois')
+    path('', views.index, name='index_type_anomalie_arrondissement')
 ]
