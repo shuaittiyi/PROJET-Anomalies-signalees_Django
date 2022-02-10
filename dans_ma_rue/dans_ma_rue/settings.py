@@ -118,6 +118,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# ---------------------------------------------
+# **** Mes routes ****
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+print("*** POUR VOIR LE CHEMIN ***", BASE_DIR)
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
