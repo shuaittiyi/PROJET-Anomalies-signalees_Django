@@ -16,12 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from . import views
+
+
+from dans_ma_rue import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # PAGE D'accueil
     path('', views.index, name = 'index'),
-    path('arrondissement/', include('arrondissement.urls')),
-    path('type_anomalie/mois', include('type_anomalie_mois.urls')),
-    path('type_anomalie/arrondissement', include('type_anomalie_arrondissement.urls')),
+    path('Q1/',include(('Q1.urls','Q1'),namespace='Q1')),
+    path('Q2/', include(('Q2.urls','Q2'),namespace='Q2')),
+    path('Q3/', include(('Q3.urls','Q3'),namespace='Q3')),
 ]
+  

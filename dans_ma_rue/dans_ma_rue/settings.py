@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Q1',
+    'Q2',
+    'Q3'
 ]
 
 MIDDLEWARE = [
@@ -106,7 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'fr'
 
-TIME_ZONE = 'UTF-8'
+TIME_ZONE = 'UTC'
+
 
 USE_I18N = True
 

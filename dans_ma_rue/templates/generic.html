@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -18,20 +19,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+  
   </head>
  
 
     <header>
-      {% load static %}
-      <img src="{% static 'img/accueil.jpg' %}" width=100% height=400px alt="" />
-      <h1 class="text-center" style="background-image: url({% static 'img/accueil.jpg'%}) width:100px;height:500px> Dans ma rue </h1>
-      
-      <h3 > Tester </h3>
-      <ul class="d-flex justify-content-between">
-        <li><a href="arrondissement/">arrondissement</a></li>
-        <li><a href="type_anomalie_mois/">Q2</a></li>
-        <li><a href="type_anomalie/arrondissement/">Q3</a></li>
-      </ul>
+      <li><a href="http://127.0.0.1:8000/">ACCUEIL</a></li>
     </header>
     <main>{% block main %}{% endblock %}</main>
     <footer></footer>
@@ -41,5 +34,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-  </body>
+   <body id="bg" style="background-image: url('{% static 'img/accueil.jpg' %}')";></body>
 </html>

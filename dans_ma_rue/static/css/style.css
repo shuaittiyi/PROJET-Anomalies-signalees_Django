@@ -1,7 +1,14 @@
 li a {
      color: green;
  }
- body {
-     background: white url("img/accueil.jpg") no-repeat right bottom;
-     background-size:100% 200%; 
- }
+
+ .fake-img {
+    display: block;
+    height: 50px;  /* set the height here */
+    width: 100%;
+    background-image: url(img/accueil.jpg);
+    background-repeat: no-repeat;
+    background-position: center 68px;
+    background-attachment: fixed;
+ 
+}

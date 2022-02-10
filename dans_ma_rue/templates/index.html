@@ -1,4 +1,14 @@
 {% extends "generic.html" %}
+
 {% block main %}
-    <h1 class="text-center">PAGE D'ACCUEIL</h1>
+  <h1 class="text-center">PAGE D'ACCUEIL</h1>
+  <h2 class="text-center">Anomalies signalées dans ma rue à paris</h2>
+<ul class="d-flex justify-content-between">
+  <li><a href="Q1">Quelles sont les années pour lesquelles
+                   il y a le plus / le moins d’anomalies
+                   signalées par arrondissement ?</a></li>
+  <li><a href="Q2">Quels sont les mois pour lesquels il y a le plus / le moins d’anomalie signalées, par type d’anomalie ?</a></li>
+  <li><a href="Q3">Quel(s) arrondissement(s) comportent le plus / le moins d’anomalies signalées, par type d’anomalie ?</a></li>
+</ul>
+    
 {% endblock %}
