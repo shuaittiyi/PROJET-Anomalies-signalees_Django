@@ -1,15 +1,16 @@
+{% load static %} <!-- BALISE QUI PERMET D'UTILISER LE MOT STATIC CI-DESSOUS -->
 <!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Welcome{% endblock %}</title>
+    <title>{% block title %} PARIS ANOMALIES SIGNALÉES {% endblock %}</title>
     {% load static %}{# charger le dossier static #}
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'css\style.css' %}"
+      href="{% static 'css/style.css' %}"
     />
     {# fichier css #} {# css boostrap #}
     <link
@@ -21,16 +22,9 @@
   </head>
   <body>
     <header>
-      {% load static %}
-      <img src="{% static 'img/crash.png' %}" alt="" />
-      <h2 class="text-primary text-uppercase">Generic</h2>
-      <ul class="d-flex justify-content-between">
-        <li class="li">1</li>
-        <li>2</li>
-        <li>1</li>
-      </ul>
+        <p>ici le généric</p>
     </header>
-    <main>{% block main %}{% endblock %}</main>
+    <main>{% block main %} {% endblock %}</main>
     <footer></footer>
     {# Javascript #} {# Js boostrap #}
     <script
