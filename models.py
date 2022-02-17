@@ -7,27 +7,27 @@ import matplotlib.pyplot as plt
 from scipy.stats import kde
 import seaborn as sns
 import json
+from datetime import datetime
 
 # Lecture du fichier csv
-#def f_lecture_fichier(chemin_vers_le_fichier) :
+def f_lecture_fichier(chemin_vers_le_fichier) :
     
-df = pandas.read_csv(r"C:\Users\shuai\Documents\FromationPython\anomalie-signalees\dans_ma_rue_ok.csv",sep = ';', encoding = 'unicode_escape', header = 0)
-    #try:
-        #df = pandas.read_csv(chemin_vers_le_fichier, sep = ';', encoding = 'unicode_escape', header = 0)
+#df = pandas.read_csv(r"C:\Users\shuai\Documents\FromationPython\anomalie-signalees\dans_ma_rue_ok.csv",sep = ';', encoding = 'unicode_escape', header = 0)
+    try:
+        df = pandas.read_csv(chemin_vers_le_fichier, sep = ';', encoding = 'unicode_escape', header = 0)
                 # supprimer les colonnes qui servent à  rien
-df = df.drop(['ADRESSE','DATE DECLARATION','geo_shape','ID DECLARATION',
+        df = df.drop(['ADRESSE','DATE DECLARATION','geo_shape','ID DECLARATION',
                 'CONSEIL DE QUARTIER','OUTIL SOURCE','INTERVENANT','ID_DMR','SOUS TYPE DECLARATION'], axis=1)
-        # Transformer tous les noms de colunnes en miniscule
-df.columns = df.columns.str.lower()
-        # Remplacer les espaces de noms de colonnes par '_'
-df.columns = df.columns.str.replace(" ", "_")
-    #except:
-        #df = "Erreur sur le fichier"
-       
-    #return df
+         #Transformer tous les noms de colunnes en miniscule
+        df.columns = df.columns.str.lower()
+         #Remplacer les espaces de noms de colonnes par '_'
+        df.columns = df.columns.str.replace(" ", "_")
+    except:
+        df = "Erreur sur le fichier"       
+    return df
 
-# le df
-#df = f_lecture_fichier("./static/csv/dans_ma_rue.csv")
+ #le df
+df = f_lecture_fichier("./static/csv/dans_ma_rue.csv")
 
 # generer la dataframe 1 et 3
 def f_data_frame(dataFrame) :
