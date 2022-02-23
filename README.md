@@ -3,8 +3,6 @@ Ceci est le dépot github pour gérer le projet Anomalies signalees
 
 Participant : shuai, bem, franck, jullien, wahib,
 
-Le jira https://shuaittiyi.atlassian.net/jira/software/projects/PAS/boards/10
-
 projet et base de donnéés
 
 Dans Ma Rue - Anomalies signalées.
@@ -20,3 +18,10 @@ https://opendata.paris.fr/explore/dataset/dans-ma-rue/table/?disjunctive.type&di
 ●Représentations graphiques : diagrammes circulaires et histogrammes. 
 
 ●Cartographie des données par choix (forme, couleur, échelle…) + récupération des coordonnées via Google map et clef d’autorisation.
+
+LE FICHIER DE DONNEE .CSV TROP LOURD POUR GITUB,
+EST A RECUPERER A L'ADRESSE :
+https://drive.google.com/file/d/1rGSXAEUclJ-PrIefoaMpt4wwnCr1-3dr/view?usp=sharing
+
+ET A INSERER DANS VOTRE DOSSIER CLONE EN SUIVANT CETTE ARBORESCENCE :
+~/dans_ma_rue/static/csv
